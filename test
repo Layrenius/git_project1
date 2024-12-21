@@ -1,12 +1,15 @@
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 
+print(1)
 local weapon = LocalPlayer.Backpack:FindFirstChild("SVDS")
 
+print(2)
 local UHWID = string.reverse(Players.LocalPlayer:GetAttribute("SeatedOnCar"))
 
+print(3)
 weapon.Parent = LocalPlayer.Character
-
+print(4)
 local function shot(body)
     local args = {
         [1] = Vector3.new(499.22137451171875, 10.788187980651855, -1247.109130859375),
